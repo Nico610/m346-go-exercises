@@ -1,9 +1,18 @@
 package main
 
-// TODO: implement the function convertCelsiusToFahrenheit
-// TODO: implement the function convertFahrenheitToCelsius
+import "fmt"
+
+func convertCelsiusToFahrenheit(celsius float64) float64 {
+	return (celsius * 9 / 5) + 32
+}
+
+func convertFahrenheitToCelsius(fahrenheit float64) float64 {
+	return (fahrenheit - 32) * 5 / 9
+}
 
 func main() {
-	// TODO: call the function convertCelsiusToFahrenheit
-	// TODO: call the function convertFahrenheitToCelsius
+
+	fmt.Println("Erste Umrechnung von 30,5 Celsius in Fahrenheit", convertCelsiusToFahrenheit(30.5))
+	fmt.Println("Zweite Umrechnung von 100 Fahrenheit in Celsius", convertFahrenheitToCelsius(100))
+
 }
